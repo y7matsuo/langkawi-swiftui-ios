@@ -16,6 +16,18 @@
 		6FCC9B0C28EEBAA40019ACBB /* langkawi_swiftui_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC9B0B28EEBAA40019ACBB /* langkawi_swiftui_iosTests.swift */; };
 		6FCC9B1628EEBAA50019ACBB /* langkawi_swiftui_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC9B1528EEBAA50019ACBB /* langkawi_swiftui_iosUITests.swift */; };
 		6FCC9B1828EEBAA50019ACBB /* langkawi_swiftui_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC9B1728EEBAA50019ACBB /* langkawi_swiftui_iosUITestsLaunchTests.swift */; };
+		6FE7CB8D28EECAB6004ADDA8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CB8C28EECAB6004ADDA8 /* MainTabView.swift */; };
+		6FE7CB9028EECC99004ADDA8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CB8F28EECC99004ADDA8 /* HomeView.swift */; };
+		6FE7CB9228EECCC2004ADDA8 /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CB9128EECCC2004ADDA8 /* FindView.swift */; };
+		6FE7CB9428EECCF2004ADDA8 /* TalkRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CB9328EECCF2004ADDA8 /* TalkRoomView.swift */; };
+		6FE7CB9628EECD52004ADDA8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CB9528EECD52004ADDA8 /* AccountView.swift */; };
+		6FE7CB9928EECDE7004ADDA8 /* LabelDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CB9828EECDE7004ADDA8 /* LabelDef.swift */; };
+		6FE7CB9B28EED0D9004ADDA8 /* ColorDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CB9A28EED0D9004ADDA8 /* ColorDef.swift */; };
+		6FE7CBA328EED420004ADDA8 /* Font Awesome 6 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FE7CBA028EED420004ADDA8 /* Font Awesome 6 Free-Solid-900.otf */; };
+		6FE7CBA428EED420004ADDA8 /* Font Awesome 6 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FE7CBA128EED420004ADDA8 /* Font Awesome 6 Free-Regular-400.otf */; };
+		6FE7CBA528EED420004ADDA8 /* Font Awesome 6 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FE7CBA228EED420004ADDA8 /* Font Awesome 6 Brands-Regular-400.otf */; };
+		6FE7CBA828EED70F004ADDA8 /* FontSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBA728EED70F004ADDA8 /* FontSupport.swift */; };
+		6FE7CBAA28EF0E6F004ADDA8 /* UISupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBA928EF0E6F004ADDA8 /* UISupport.swift */; };
 		D103C0A036CFDC00DE6129F7 /* Pods_langkawi_swiftui_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72040CD68BB1D4D7885CED15 /* Pods_langkawi_swiftui_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +63,19 @@
 		6FCC9B1128EEBAA50019ACBB /* langkawi-swiftui-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "langkawi-swiftui-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCC9B1528EEBAA50019ACBB /* langkawi_swiftui_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = langkawi_swiftui_iosUITests.swift; sourceTree = "<group>"; };
 		6FCC9B1728EEBAA50019ACBB /* langkawi_swiftui_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = langkawi_swiftui_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6FE7CB8C28EECAB6004ADDA8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		6FE7CB8F28EECC99004ADDA8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6FE7CB9128EECCC2004ADDA8 /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
+		6FE7CB9328EECCF2004ADDA8 /* TalkRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkRoomView.swift; sourceTree = "<group>"; };
+		6FE7CB9528EECD52004ADDA8 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		6FE7CB9828EECDE7004ADDA8 /* LabelDef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelDef.swift; sourceTree = "<group>"; };
+		6FE7CB9A28EED0D9004ADDA8 /* ColorDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDef.swift; sourceTree = "<group>"; };
+		6FE7CBA028EED420004ADDA8 /* Font Awesome 6 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 6 Free-Solid-900.otf"; sourceTree = "<group>"; };
+		6FE7CBA128EED420004ADDA8 /* Font Awesome 6 Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 6 Free-Regular-400.otf"; sourceTree = "<group>"; };
+		6FE7CBA228EED420004ADDA8 /* Font Awesome 6 Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 6 Brands-Regular-400.otf"; sourceTree = "<group>"; };
+		6FE7CBA628EED52E004ADDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6FE7CBA728EED70F004ADDA8 /* FontSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSupport.swift; sourceTree = "<group>"; };
+		6FE7CBA928EF0E6F004ADDA8 /* UISupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISupport.swift; sourceTree = "<group>"; };
 		72040CD68BB1D4D7885CED15 /* Pods_langkawi_swiftui_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_langkawi_swiftui_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F912399739C91C11A73A667 /* Pods-langkawi-swiftui-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-langkawi-swiftui-ios.release.xcconfig"; path = "Target Support Files/Pods-langkawi-swiftui-ios/Pods-langkawi-swiftui-ios.release.xcconfig"; sourceTree = "<group>"; };
 		E775775F013DAB0968B3830C /* Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests/Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,7 +121,6 @@
 				3E971E84A033E69FD52FF083 /* Pods-langkawi-swiftui-iosTests.debug.xcconfig */,
 				F5D535E157A89B394EBBCC48 /* Pods-langkawi-swiftui-iosTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,10 +159,13 @@
 		6FCC9AF928EEBAA30019ACBB /* langkawi-swiftui-ios */ = {
 			isa = PBXGroup;
 			children = (
-				6FCC9AFA28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift */,
+				6FE7CBA628EED52E004ADDA8 /* Info.plist */,
 				6FCC9AFC28EEBAA30019ACBB /* ContentView.swift */,
-				6FCC9AFE28EEBAA40019ACBB /* Assets.xcassets */,
+				6FCC9AFA28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift */,
+				6FE7CB8B28EEC14C004ADDA8 /* Modules */,
 				6FCC9B0028EEBAA40019ACBB /* Preview Content */,
+				6FE7CB9C28EED373004ADDA8 /* Resources */,
+				6FE7CB9728EECDB4004ADDA8 /* Utils */,
 			);
 			path = "langkawi-swiftui-ios";
 			sourceTree = "<group>";
@@ -166,6 +193,56 @@
 				6FCC9B1728EEBAA50019ACBB /* langkawi_swiftui_iosUITestsLaunchTests.swift */,
 			);
 			path = "langkawi-swiftui-iosUITests";
+			sourceTree = "<group>";
+		};
+		6FE7CB8B28EEC14C004ADDA8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CB8E28EECC46004ADDA8 /* Tab */,
+				6FE7CB8C28EECAB6004ADDA8 /* MainTabView.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6FE7CB8E28EECC46004ADDA8 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CB9528EECD52004ADDA8 /* AccountView.swift */,
+				6FE7CB9128EECCC2004ADDA8 /* FindView.swift */,
+				6FE7CB8F28EECC99004ADDA8 /* HomeView.swift */,
+				6FE7CB9328EECCF2004ADDA8 /* TalkRoomView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		6FE7CB9728EECDB4004ADDA8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CB9A28EED0D9004ADDA8 /* ColorDef.swift */,
+				6FE7CBA728EED70F004ADDA8 /* FontSupport.swift */,
+				6FE7CB9828EECDE7004ADDA8 /* LabelDef.swift */,
+				6FE7CBA928EF0E6F004ADDA8 /* UISupport.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6FE7CB9C28EED373004ADDA8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6FCC9AFE28EEBAA40019ACBB /* Assets.xcassets */,
+				6FE7CB9F28EED420004ADDA8 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6FE7CB9F28EED420004ADDA8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CBA228EED420004ADDA8 /* Font Awesome 6 Brands-Regular-400.otf */,
+				6FE7CBA128EED420004ADDA8 /* Font Awesome 6 Free-Regular-400.otf */,
+				6FE7CBA028EED420004ADDA8 /* Font Awesome 6 Free-Solid-900.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +354,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE7CBA528EED420004ADDA8 /* Font Awesome 6 Brands-Regular-400.otf in Resources */,
+				6FE7CBA328EED420004ADDA8 /* Font Awesome 6 Free-Solid-900.otf in Resources */,
 				6FCC9B0228EEBAA40019ACBB /* Preview Assets.xcassets in Resources */,
+				6FE7CBA428EED420004ADDA8 /* Font Awesome 6 Free-Regular-400.otf in Resources */,
 				6FCC9AFF28EEBAA40019ACBB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,8 +486,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE7CB9928EECDE7004ADDA8 /* LabelDef.swift in Sources */,
+				6FE7CB9228EECCC2004ADDA8 /* FindView.swift in Sources */,
 				6FCC9AFD28EEBAA30019ACBB /* ContentView.swift in Sources */,
+				6FE7CB9028EECC99004ADDA8 /* HomeView.swift in Sources */,
+				6FE7CBA828EED70F004ADDA8 /* FontSupport.swift in Sources */,
+				6FE7CBAA28EF0E6F004ADDA8 /* UISupport.swift in Sources */,
 				6FCC9AFB28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift in Sources */,
+				6FE7CB9628EECD52004ADDA8 /* AccountView.swift in Sources */,
+				6FE7CB9B28EED0D9004ADDA8 /* ColorDef.swift in Sources */,
+				6FE7CB8D28EECAB6004ADDA8 /* MainTabView.swift in Sources */,
+				6FE7CB9428EECCF2004ADDA8 /* TalkRoomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,11 +659,12 @@
 				DEVELOPMENT_TEAM = S4P25B9NR9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "langkawi-swiftui-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -600,11 +690,12 @@
 				DEVELOPMENT_TEAM = S4P25B9NR9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "langkawi-swiftui-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
