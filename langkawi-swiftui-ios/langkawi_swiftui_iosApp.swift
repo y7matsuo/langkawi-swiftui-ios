@@ -11,7 +11,7 @@ import SwiftUI
 struct langkawi_swiftui_iosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
