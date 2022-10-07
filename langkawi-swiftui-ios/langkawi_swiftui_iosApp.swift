@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct langkawi_swiftui_iosApp: App {
+    init() {
+        SwinjectManager.shared.initialize()
+    }
+    
     var body: some Scene {
         WindowGroup {
             MainTabView()

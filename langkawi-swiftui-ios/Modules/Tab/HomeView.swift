@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var loginPresented: Bool = true
     
     var body: some View {
         NavigationView {
@@ -15,6 +16,7 @@ struct HomeView: View {
                 Text("home")
             }
         }
+        .showLogin(isPresented: $loginPresented)
     }
 }
 
