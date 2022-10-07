@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3F9F69C74589DD228DD7A77D /* Pods_langkawi_swiftui_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D6C9FA8770F9E5A88B309E /* Pods_langkawi_swiftui_iosTests.framework */; };
 		568A0336A9B17E496F1CCEB0 /* Pods_langkawi_swiftui_ios_langkawi_swiftui_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4CD9F510858AB962EC6B24 /* Pods_langkawi_swiftui_ios_langkawi_swiftui_iosUITests.framework */; };
+		6F0B6E4128EFF3BC00E26CE5 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4028EFF3BC00E26CE5 /* ButtonStyles.swift */; };
+		6F0B6E4328F0019800E26CE5 /* ModalBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4228F0019800E26CE5 /* ModalBaseViewModel.swift */; };
+		6F0B6E4528F0073200E26CE5 /* PreviewSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4428F0073200E26CE5 /* PreviewSupport.swift */; };
+		6F0B6E4728F00CD300E26CE5 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4628F00CD300E26CE5 /* ViewExtensions.swift */; };
 		6FCC9AFB28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC9AFA28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift */; };
 		6FCC9AFD28EEBAA30019ACBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC9AFC28EEBAA30019ACBB /* ContentView.swift */; };
 		6FCC9AFF28EEBAA40019ACBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC9AFE28EEBAA40019ACBB /* Assets.xcassets */; };
@@ -26,8 +30,51 @@
 		6FE7CBA328EED420004ADDA8 /* Font Awesome 6 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FE7CBA028EED420004ADDA8 /* Font Awesome 6 Free-Solid-900.otf */; };
 		6FE7CBA428EED420004ADDA8 /* Font Awesome 6 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FE7CBA128EED420004ADDA8 /* Font Awesome 6 Free-Regular-400.otf */; };
 		6FE7CBA528EED420004ADDA8 /* Font Awesome 6 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FE7CBA228EED420004ADDA8 /* Font Awesome 6 Brands-Regular-400.otf */; };
-		6FE7CBA828EED70F004ADDA8 /* FontSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBA728EED70F004ADDA8 /* FontSupport.swift */; };
+		6FE7CBA828EED70F004ADDA8 /* FontAwesomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBA728EED70F004ADDA8 /* FontAwesomeType.swift */; };
 		6FE7CBAA28EF0E6F004ADDA8 /* UISupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBA928EF0E6F004ADDA8 /* UISupport.swift */; };
+		6FE7CBB628EFA0F9004ADDA8 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBAD28EFA0F9004ADDA8 /* UserAPI.swift */; };
+		6FE7CBB728EFA0F9004ADDA8 /* ImageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBAE28EFA0F9004ADDA8 /* ImageAPI.swift */; };
+		6FE7CBB928EFA0F9004ADDA8 /* RequestAdaptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBB028EFA0F9004ADDA8 /* RequestAdaptors.swift */; };
+		6FE7CBBA28EFA0F9004ADDA8 /* TalkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBB128EFA0F9004ADDA8 /* TalkAPI.swift */; };
+		6FE7CBBB28EFA0F9004ADDA8 /* UserDetailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBB228EFA0F9004ADDA8 /* UserDetailAPI.swift */; };
+		6FE7CBBC28EFA0F9004ADDA8 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBB328EFA0F9004ADDA8 /* BaseAPI.swift */; };
+		6FE7CBBD28EFA0F9004ADDA8 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBB428EFA0F9004ADDA8 /* LoginAPI.swift */; };
+		6FE7CBBE28EFA0F9004ADDA8 /* RelationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBB528EFA0F9004ADDA8 /* RelationAPI.swift */; };
+		6FE7CBC028EFA105004ADDA8 /* SwinjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBBF28EFA105004ADDA8 /* SwinjectManager.swift */; };
+		6FE7CBC328EFA1FE004ADDA8 /* AccountContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBC228EFA1FE004ADDA8 /* AccountContract.swift */; };
+		6FE7CBC528EFA450004ADDA8 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBC428EFA450004ADDA8 /* LoginManager.swift */; };
+		6FE7CBC828EFA4F5004ADDA8 /* ModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBC728EFA4F5004ADDA8 /* ModelExtensions.swift */; };
+		6FE7CBD828EFA527004ADDA8 /* RelationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBCA28EFA527004ADDA8 /* RelationResponse.swift */; };
+		6FE7CBD928EFA527004ADDA8 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBCB28EFA527004ADDA8 /* UserDetail.swift */; };
+		6FE7CBDA28EFA527004ADDA8 /* DBKeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBCC28EFA527004ADDA8 /* DBKeyValue.swift */; };
+		6FE7CBDB28EFA527004ADDA8 /* ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBCD28EFA527004ADDA8 /* ImageUrl.swift */; };
+		6FE7CBDC28EFA527004ADDA8 /* TalkRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBCE28EFA527004ADDA8 /* TalkRoom.swift */; };
+		6FE7CBDD28EFA527004ADDA8 /* TalkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBCF28EFA527004ADDA8 /* TalkResponse.swift */; };
+		6FE7CBDE28EFA527004ADDA8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBD028EFA527004ADDA8 /* User.swift */; };
+		6FE7CBDF28EFA527004ADDA8 /* RelationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBD128EFA527004ADDA8 /* RelationsResponse.swift */; };
+		6FE7CBE028EFA527004ADDA8 /* TalkRoomsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBD228EFA527004ADDA8 /* TalkRoomsResponse.swift */; };
+		6FE7CBE128EFA527004ADDA8 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBD328EFA527004ADDA8 /* UsersResponse.swift */; };
+		6FE7CBE228EFA527004ADDA8 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBD428EFA527004ADDA8 /* LoginResponse.swift */; };
+		6FE7CBE328EFA527004ADDA8 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBD528EFA527004ADDA8 /* ErrorResponse.swift */; };
+		6FE7CBE428EFA527004ADDA8 /* SuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBD628EFA527004ADDA8 /* SuccessResponse.swift */; };
+		6FE7CBE528EFA527004ADDA8 /* TalksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBD728EFA527004ADDA8 /* TalksResponse.swift */; };
+		6FE7CBED28EFA5E5004ADDA8 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBE728EFA5E5004ADDA8 /* UserType.swift */; };
+		6FE7CBEE28EFA5E5004ADDA8 /* SubmitterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBE828EFA5E5004ADDA8 /* SubmitterType.swift */; };
+		6FE7CBEF28EFA5E5004ADDA8 /* GenderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBE928EFA5E5004ADDA8 /* GenderType.swift */; };
+		6FE7CBF028EFA5E5004ADDA8 /* TalkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBEA28EFA5E5004ADDA8 /* TalkStatus.swift */; };
+		6FE7CBF128EFA5E5004ADDA8 /* RelationPositionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBEB28EFA5E5004ADDA8 /* RelationPositionStatus.swift */; };
+		6FE7CBF228EFA5E5004ADDA8 /* RelationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBEC28EFA5E5004ADDA8 /* RelationStatus.swift */; };
+		6FE7CBF428EFA609004ADDA8 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBF328EFA609004ADDA8 /* UIExtensions.swift */; };
+		6FE7CBF928EFA6F3004ADDA8 /* APIStatusError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBF728EFA6F3004ADDA8 /* APIStatusError.swift */; };
+		6FE7CBFC28EFA815004ADDA8 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBFB28EFA815004ADDA8 /* LoginContract.swift */; };
+		6FE7CBFE28EFAC55004ADDA8 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CBFD28EFAC55004ADDA8 /* LoginInteractor.swift */; };
+		6FE7CC0128EFB1C2004ADDA8 /* BaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CC0028EFB1C2004ADDA8 /* BaseContract.swift */; };
+		6FE7CC0328EFB4C9004ADDA8 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CC0228EFB4C9004ADDA8 /* BaseViewModel.swift */; };
+		6FE7CC0D28EFC767004ADDA8 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CC0C28EFC767004ADDA8 /* LoginPresenter.swift */; };
+		6FE7CC0F28EFD0F2004ADDA8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CC0E28EFD0F2004ADDA8 /* LoginViewModel.swift */; };
+		6FE7CC1128EFD1A6004ADDA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CC1028EFD1A6004ADDA8 /* LoginView.swift */; };
+		6FE7CC1328EFD48C004ADDA8 /* MessageDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CC1228EFD48C004ADDA8 /* MessageDef.swift */; };
+		6FE7CC1528EFE115004ADDA8 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7CC1428EFE115004ADDA8 /* LoginRouter.swift */; };
 		D103C0A036CFDC00DE6129F7 /* Pods_langkawi_swiftui_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72040CD68BB1D4D7885CED15 /* Pods_langkawi_swiftui_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +100,10 @@
 		273FADB369C37F1C33CADF5C /* Pods-langkawi-swiftui-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-langkawi-swiftui-ios.debug.xcconfig"; path = "Target Support Files/Pods-langkawi-swiftui-ios/Pods-langkawi-swiftui-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		36F6C5A14D973040B9C4FA68 /* Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests/Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3E971E84A033E69FD52FF083 /* Pods-langkawi-swiftui-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-langkawi-swiftui-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-langkawi-swiftui-iosTests/Pods-langkawi-swiftui-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F0B6E4028EFF3BC00E26CE5 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		6F0B6E4228F0019800E26CE5 /* ModalBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBaseViewModel.swift; sourceTree = "<group>"; };
+		6F0B6E4428F0073200E26CE5 /* PreviewSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSupport.swift; sourceTree = "<group>"; };
+		6F0B6E4628F00CD300E26CE5 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		6FCC9AF728EEBAA30019ACBB /* langkawi-swiftui-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "langkawi-swiftui-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCC9AFA28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = langkawi_swiftui_iosApp.swift; sourceTree = "<group>"; };
 		6FCC9AFC28EEBAA30019ACBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,8 +125,51 @@
 		6FE7CBA128EED420004ADDA8 /* Font Awesome 6 Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 6 Free-Regular-400.otf"; sourceTree = "<group>"; };
 		6FE7CBA228EED420004ADDA8 /* Font Awesome 6 Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 6 Brands-Regular-400.otf"; sourceTree = "<group>"; };
 		6FE7CBA628EED52E004ADDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		6FE7CBA728EED70F004ADDA8 /* FontSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSupport.swift; sourceTree = "<group>"; };
+		6FE7CBA728EED70F004ADDA8 /* FontAwesomeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesomeType.swift; sourceTree = "<group>"; };
 		6FE7CBA928EF0E6F004ADDA8 /* UISupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISupport.swift; sourceTree = "<group>"; };
+		6FE7CBAD28EFA0F9004ADDA8 /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		6FE7CBAE28EFA0F9004ADDA8 /* ImageAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAPI.swift; sourceTree = "<group>"; };
+		6FE7CBB028EFA0F9004ADDA8 /* RequestAdaptors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAdaptors.swift; sourceTree = "<group>"; };
+		6FE7CBB128EFA0F9004ADDA8 /* TalkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkAPI.swift; sourceTree = "<group>"; };
+		6FE7CBB228EFA0F9004ADDA8 /* UserDetailAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailAPI.swift; sourceTree = "<group>"; };
+		6FE7CBB328EFA0F9004ADDA8 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		6FE7CBB428EFA0F9004ADDA8 /* LoginAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		6FE7CBB528EFA0F9004ADDA8 /* RelationAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationAPI.swift; sourceTree = "<group>"; };
+		6FE7CBBF28EFA105004ADDA8 /* SwinjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectManager.swift; sourceTree = "<group>"; };
+		6FE7CBC228EFA1FE004ADDA8 /* AccountContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountContract.swift; sourceTree = "<group>"; };
+		6FE7CBC428EFA450004ADDA8 /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		6FE7CBC728EFA4F5004ADDA8 /* ModelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelExtensions.swift; sourceTree = "<group>"; };
+		6FE7CBCA28EFA527004ADDA8 /* RelationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationResponse.swift; sourceTree = "<group>"; };
+		6FE7CBCB28EFA527004ADDA8 /* UserDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		6FE7CBCC28EFA527004ADDA8 /* DBKeyValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBKeyValue.swift; sourceTree = "<group>"; };
+		6FE7CBCD28EFA527004ADDA8 /* ImageUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUrl.swift; sourceTree = "<group>"; };
+		6FE7CBCE28EFA527004ADDA8 /* TalkRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkRoom.swift; sourceTree = "<group>"; };
+		6FE7CBCF28EFA527004ADDA8 /* TalkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkResponse.swift; sourceTree = "<group>"; };
+		6FE7CBD028EFA527004ADDA8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6FE7CBD128EFA527004ADDA8 /* RelationsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationsResponse.swift; sourceTree = "<group>"; };
+		6FE7CBD228EFA527004ADDA8 /* TalkRoomsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkRoomsResponse.swift; sourceTree = "<group>"; };
+		6FE7CBD328EFA527004ADDA8 /* UsersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
+		6FE7CBD428EFA527004ADDA8 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		6FE7CBD528EFA527004ADDA8 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		6FE7CBD628EFA527004ADDA8 /* SuccessResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessResponse.swift; sourceTree = "<group>"; };
+		6FE7CBD728EFA527004ADDA8 /* TalksResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksResponse.swift; sourceTree = "<group>"; };
+		6FE7CBE728EFA5E5004ADDA8 /* UserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
+		6FE7CBE828EFA5E5004ADDA8 /* SubmitterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitterType.swift; sourceTree = "<group>"; };
+		6FE7CBE928EFA5E5004ADDA8 /* GenderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderType.swift; sourceTree = "<group>"; };
+		6FE7CBEA28EFA5E5004ADDA8 /* TalkStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkStatus.swift; sourceTree = "<group>"; };
+		6FE7CBEB28EFA5E5004ADDA8 /* RelationPositionStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationPositionStatus.swift; sourceTree = "<group>"; };
+		6FE7CBEC28EFA5E5004ADDA8 /* RelationStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationStatus.swift; sourceTree = "<group>"; };
+		6FE7CBF328EFA609004ADDA8 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		6FE7CBF728EFA6F3004ADDA8 /* APIStatusError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIStatusError.swift; sourceTree = "<group>"; };
+		6FE7CBFB28EFA815004ADDA8 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		6FE7CBFD28EFAC55004ADDA8 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		6FE7CC0028EFB1C2004ADDA8 /* BaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseContract.swift; sourceTree = "<group>"; };
+		6FE7CC0228EFB4C9004ADDA8 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		6FE7CC0C28EFC767004ADDA8 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		6FE7CC0E28EFD0F2004ADDA8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6FE7CC1028EFD1A6004ADDA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6FE7CC1228EFD48C004ADDA8 /* MessageDef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDef.swift; sourceTree = "<group>"; };
+		6FE7CC1428EFE115004ADDA8 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		72040CD68BB1D4D7885CED15 /* Pods_langkawi_swiftui_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_langkawi_swiftui_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F912399739C91C11A73A667 /* Pods-langkawi-swiftui-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-langkawi-swiftui-ios.release.xcconfig"; path = "Target Support Files/Pods-langkawi-swiftui-ios/Pods-langkawi-swiftui-ios.release.xcconfig"; sourceTree = "<group>"; };
 		E775775F013DAB0968B3830C /* Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests/Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,9 +256,15 @@
 				6FE7CBA628EED52E004ADDA8 /* Info.plist */,
 				6FCC9AFC28EEBAA30019ACBB /* ContentView.swift */,
 				6FCC9AFA28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift */,
+				6FE7CBE628EFA5E5004ADDA8 /* Enums */,
+				6FE7CBF528EFA6F3004ADDA8 /* Errors */,
+				6FE7CBC628EFA4CD004ADDA8 /* Extensions */,
+				6FE7CBC928EFA527004ADDA8 /* Models */,
 				6FE7CB8B28EEC14C004ADDA8 /* Modules */,
+				6FE7CBAC28EFA05C004ADDA8 /* Network */,
 				6FCC9B0028EEBAA40019ACBB /* Preview Content */,
 				6FE7CB9C28EED373004ADDA8 /* Resources */,
+				6FE7CC1628EFF375004ADDA8 /* Styles */,
 				6FE7CB9728EECDB4004ADDA8 /* Utils */,
 			);
 			path = "langkawi-swiftui-ios";
@@ -174,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				6FCC9B0128EEBAA40019ACBB /* Preview Assets.xcassets */,
+				6F0B6E4428F0073200E26CE5 /* PreviewSupport.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -198,8 +299,10 @@
 		6FE7CB8B28EEC14C004ADDA8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				6FE7CB8E28EECC46004ADDA8 /* Tab */,
 				6FE7CB8C28EECAB6004ADDA8 /* MainTabView.swift */,
+				6FE7CBFF28EFB173004ADDA8 /* Base */,
+				6FE7CBFA28EFA7C7004ADDA8 /* Login */,
+				6FE7CB8E28EECC46004ADDA8 /* Tab */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -207,10 +310,10 @@
 		6FE7CB8E28EECC46004ADDA8 /* Tab */ = {
 			isa = PBXGroup;
 			children = (
-				6FE7CB9528EECD52004ADDA8 /* AccountView.swift */,
 				6FE7CB9128EECCC2004ADDA8 /* FindView.swift */,
 				6FE7CB8F28EECC99004ADDA8 /* HomeView.swift */,
 				6FE7CB9328EECCF2004ADDA8 /* TalkRoomView.swift */,
+				6FE7CBC128EFA1BB004ADDA8 /* Account */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -219,8 +322,10 @@
 			isa = PBXGroup;
 			children = (
 				6FE7CB9A28EED0D9004ADDA8 /* ColorDef.swift */,
-				6FE7CBA728EED70F004ADDA8 /* FontSupport.swift */,
 				6FE7CB9828EECDE7004ADDA8 /* LabelDef.swift */,
+				6FE7CBC428EFA450004ADDA8 /* LoginManager.swift */,
+				6FE7CC1228EFD48C004ADDA8 /* MessageDef.swift */,
+				6FE7CBBF28EFA105004ADDA8 /* SwinjectManager.swift */,
 				6FE7CBA928EF0E6F004ADDA8 /* UISupport.swift */,
 			);
 			path = Utils;
@@ -243,6 +348,114 @@
 				6FE7CBA028EED420004ADDA8 /* Font Awesome 6 Free-Solid-900.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6FE7CBAC28EFA05C004ADDA8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CBB328EFA0F9004ADDA8 /* BaseAPI.swift */,
+				6FE7CBAE28EFA0F9004ADDA8 /* ImageAPI.swift */,
+				6FE7CBB428EFA0F9004ADDA8 /* LoginAPI.swift */,
+				6FE7CBB528EFA0F9004ADDA8 /* RelationAPI.swift */,
+				6FE7CBB028EFA0F9004ADDA8 /* RequestAdaptors.swift */,
+				6FE7CBB128EFA0F9004ADDA8 /* TalkAPI.swift */,
+				6FE7CBAD28EFA0F9004ADDA8 /* UserAPI.swift */,
+				6FE7CBB228EFA0F9004ADDA8 /* UserDetailAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6FE7CBC128EFA1BB004ADDA8 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CBC228EFA1FE004ADDA8 /* AccountContract.swift */,
+				6FE7CB9528EECD52004ADDA8 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		6FE7CBC628EFA4CD004ADDA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CBC728EFA4F5004ADDA8 /* ModelExtensions.swift */,
+				6FE7CBF328EFA609004ADDA8 /* UIExtensions.swift */,
+				6F0B6E4628F00CD300E26CE5 /* ViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6FE7CBC928EFA527004ADDA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CBCA28EFA527004ADDA8 /* RelationResponse.swift */,
+				6FE7CBCB28EFA527004ADDA8 /* UserDetail.swift */,
+				6FE7CBCC28EFA527004ADDA8 /* DBKeyValue.swift */,
+				6FE7CBCD28EFA527004ADDA8 /* ImageUrl.swift */,
+				6FE7CBCE28EFA527004ADDA8 /* TalkRoom.swift */,
+				6FE7CBCF28EFA527004ADDA8 /* TalkResponse.swift */,
+				6FE7CBD028EFA527004ADDA8 /* User.swift */,
+				6FE7CBD128EFA527004ADDA8 /* RelationsResponse.swift */,
+				6FE7CBD228EFA527004ADDA8 /* TalkRoomsResponse.swift */,
+				6FE7CBD328EFA527004ADDA8 /* UsersResponse.swift */,
+				6FE7CBD428EFA527004ADDA8 /* LoginResponse.swift */,
+				6FE7CBD528EFA527004ADDA8 /* ErrorResponse.swift */,
+				6FE7CBD628EFA527004ADDA8 /* SuccessResponse.swift */,
+				6FE7CBD728EFA527004ADDA8 /* TalksResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6FE7CBE628EFA5E5004ADDA8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CBA728EED70F004ADDA8 /* FontAwesomeType.swift */,
+				6FE7CBE928EFA5E5004ADDA8 /* GenderType.swift */,
+				6FE7CBEB28EFA5E5004ADDA8 /* RelationPositionStatus.swift */,
+				6FE7CBEC28EFA5E5004ADDA8 /* RelationStatus.swift */,
+				6FE7CBE828EFA5E5004ADDA8 /* SubmitterType.swift */,
+				6FE7CBEA28EFA5E5004ADDA8 /* TalkStatus.swift */,
+				6FE7CBE728EFA5E5004ADDA8 /* UserType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		6FE7CBF528EFA6F3004ADDA8 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CBF728EFA6F3004ADDA8 /* APIStatusError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		6FE7CBFA28EFA7C7004ADDA8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CBFB28EFA815004ADDA8 /* LoginContract.swift */,
+				6FE7CBFD28EFAC55004ADDA8 /* LoginInteractor.swift */,
+				6FE7CC0C28EFC767004ADDA8 /* LoginPresenter.swift */,
+				6FE7CC1428EFE115004ADDA8 /* LoginRouter.swift */,
+				6FE7CC1028EFD1A6004ADDA8 /* LoginView.swift */,
+				6FE7CC0E28EFD0F2004ADDA8 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6FE7CBFF28EFB173004ADDA8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7CC0028EFB1C2004ADDA8 /* BaseContract.swift */,
+				6FE7CC0228EFB4C9004ADDA8 /* BaseViewModel.swift */,
+				6F0B6E4228F0019800E26CE5 /* ModalBaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6FE7CC1628EFF375004ADDA8 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				6F0B6E4028EFF3BC00E26CE5 /* ButtonStyles.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,15 +701,62 @@
 			files = (
 				6FE7CB9928EECDE7004ADDA8 /* LabelDef.swift in Sources */,
 				6FE7CB9228EECCC2004ADDA8 /* FindView.swift in Sources */,
+				6FE7CBED28EFA5E5004ADDA8 /* UserType.swift in Sources */,
+				6FE7CBF428EFA609004ADDA8 /* UIExtensions.swift in Sources */,
+				6FE7CBF128EFA5E5004ADDA8 /* RelationPositionStatus.swift in Sources */,
+				6FE7CBE528EFA527004ADDA8 /* TalksResponse.swift in Sources */,
+				6FE7CC0128EFB1C2004ADDA8 /* BaseContract.swift in Sources */,
+				6FE7CBF228EFA5E5004ADDA8 /* RelationStatus.swift in Sources */,
 				6FCC9AFD28EEBAA30019ACBB /* ContentView.swift in Sources */,
+				6FE7CC0D28EFC767004ADDA8 /* LoginPresenter.swift in Sources */,
+				6FE7CC1128EFD1A6004ADDA8 /* LoginView.swift in Sources */,
+				6FE7CBDB28EFA527004ADDA8 /* ImageUrl.swift in Sources */,
+				6FE7CBFE28EFAC55004ADDA8 /* LoginInteractor.swift in Sources */,
+				6FE7CBF928EFA6F3004ADDA8 /* APIStatusError.swift in Sources */,
+				6FE7CC1528EFE115004ADDA8 /* LoginRouter.swift in Sources */,
+				6FE7CBE428EFA527004ADDA8 /* SuccessResponse.swift in Sources */,
+				6FE7CBEE28EFA5E5004ADDA8 /* SubmitterType.swift in Sources */,
+				6FE7CBDE28EFA527004ADDA8 /* User.swift in Sources */,
+				6FE7CBDD28EFA527004ADDA8 /* TalkResponse.swift in Sources */,
+				6FE7CBBC28EFA0F9004ADDA8 /* BaseAPI.swift in Sources */,
+				6F0B6E4728F00CD300E26CE5 /* ViewExtensions.swift in Sources */,
 				6FE7CB9028EECC99004ADDA8 /* HomeView.swift in Sources */,
-				6FE7CBA828EED70F004ADDA8 /* FontSupport.swift in Sources */,
+				6FE7CBA828EED70F004ADDA8 /* FontAwesomeType.swift in Sources */,
+				6FE7CBF028EFA5E5004ADDA8 /* TalkStatus.swift in Sources */,
+				6FE7CBDC28EFA527004ADDA8 /* TalkRoom.swift in Sources */,
+				6FE7CBB628EFA0F9004ADDA8 /* UserAPI.swift in Sources */,
+				6FE7CBD928EFA527004ADDA8 /* UserDetail.swift in Sources */,
 				6FE7CBAA28EF0E6F004ADDA8 /* UISupport.swift in Sources */,
+				6FE7CBBD28EFA0F9004ADDA8 /* LoginAPI.swift in Sources */,
+				6FE7CBDA28EFA527004ADDA8 /* DBKeyValue.swift in Sources */,
+				6FE7CBEF28EFA5E5004ADDA8 /* GenderType.swift in Sources */,
+				6FE7CBE328EFA527004ADDA8 /* ErrorResponse.swift in Sources */,
+				6FE7CBC328EFA1FE004ADDA8 /* AccountContract.swift in Sources */,
+				6FE7CBB728EFA0F9004ADDA8 /* ImageAPI.swift in Sources */,
+				6F0B6E4128EFF3BC00E26CE5 /* ButtonStyles.swift in Sources */,
+				6FE7CBDF28EFA527004ADDA8 /* RelationsResponse.swift in Sources */,
+				6FE7CBBB28EFA0F9004ADDA8 /* UserDetailAPI.swift in Sources */,
 				6FCC9AFB28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift in Sources */,
 				6FE7CB9628EECD52004ADDA8 /* AccountView.swift in Sources */,
 				6FE7CB9B28EED0D9004ADDA8 /* ColorDef.swift in Sources */,
+				6FE7CC1328EFD48C004ADDA8 /* MessageDef.swift in Sources */,
+				6FE7CBE028EFA527004ADDA8 /* TalkRoomsResponse.swift in Sources */,
+				6FE7CBB928EFA0F9004ADDA8 /* RequestAdaptors.swift in Sources */,
+				6FE7CBFC28EFA815004ADDA8 /* LoginContract.swift in Sources */,
+				6FE7CBBE28EFA0F9004ADDA8 /* RelationAPI.swift in Sources */,
+				6FE7CBC028EFA105004ADDA8 /* SwinjectManager.swift in Sources */,
+				6FE7CBC828EFA4F5004ADDA8 /* ModelExtensions.swift in Sources */,
+				6FE7CC0328EFB4C9004ADDA8 /* BaseViewModel.swift in Sources */,
 				6FE7CB8D28EECAB6004ADDA8 /* MainTabView.swift in Sources */,
+				6F0B6E4328F0019800E26CE5 /* ModalBaseViewModel.swift in Sources */,
+				6FE7CC0F28EFD0F2004ADDA8 /* LoginViewModel.swift in Sources */,
+				6FE7CBE128EFA527004ADDA8 /* UsersResponse.swift in Sources */,
+				6FE7CBBA28EFA0F9004ADDA8 /* TalkAPI.swift in Sources */,
+				6FE7CBC528EFA450004ADDA8 /* LoginManager.swift in Sources */,
+				6FE7CBD828EFA527004ADDA8 /* RelationResponse.swift in Sources */,
 				6FE7CB9428EECCF2004ADDA8 /* TalkRoomView.swift in Sources */,
+				6F0B6E4528F0073200E26CE5 /* PreviewSupport.swift in Sources */,
+				6FE7CBE228EFA527004ADDA8 /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
