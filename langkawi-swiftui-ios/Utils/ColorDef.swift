@@ -8,5 +8,7 @@
 import SwiftUI
 
 class ColorDef {
+    static let primary = Color.green
+    static let secondary = Color.purple
     static let appBar = Color(red: 242/255, green: 242/255, blue: 242/255)
 }
