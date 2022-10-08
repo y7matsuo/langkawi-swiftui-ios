@@ -26,7 +26,7 @@ struct MainTabView: View {
                 tabItemImage(name: "comments")
                 Text(LabelDef.talkRoom)
             }
-            AccountView().tabItem {
+            AccountRouter.assemble().tabItem {
                 tabItemImage(name: "user")
                 Text(LabelDef.account)
             }

@@ -7,22 +7,18 @@
 
 import SwiftUI
 
-protocol AccountUseCase {
-    
+protocol AccountUseCase: BaseUseCase {
+    func fetchUser(userId: Int)
+    func fetchAvator(userId: Int)
 }
 
-protocol AccountInteractorOutput {
-    
+protocol AccountInteractorOutput: BaseInteractorOutput {
+    func onFetchUser(user: User)
+    func onFetchAvator(image: UIImage)
 }
 
-protocol AccountWireFrame {
-    
-}
-
-protocol AccountPresentation {
-    
-}
-
-protocol AccountViewProtocol: View {
-    
+protocol AccountPresentation: BasePresentation {
+    func fetchAccount()
+    func showNameEdit()
+    func showDescriptionEdit()
 }
