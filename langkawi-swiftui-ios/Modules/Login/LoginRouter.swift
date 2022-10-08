@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class LoginRouter: LoginWireFrame {
+class LoginRouter {
     
     static func assemble(isPresented: Binding<Bool>) -> some View {
         let interactor = LoginInteractor(loginAPI: LoginAPIImpl())

@@ -15,8 +15,6 @@ protocol LoginInteractorOutput: BaseInteractorOutput {
     func onLogin(response: LoginResponse)
 }
 
-protocol LoginWireFrame: BaseWireFrame {}
-
 protocol LoginPresentation: BasePresentation {
     func doLogin(loginId: String, password: String)
 }

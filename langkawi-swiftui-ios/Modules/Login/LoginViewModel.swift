@@ -9,8 +9,8 @@ import SwiftUI
 
 class LoginViewModel: ModalBaseViewModel {
     @Published var loginComplete: Bool = false
-    @Published var loginId: String = ""
-    @Published var password: String = ""
+    @Published var loginId: String = "jerold@adams.co"
+    @Published var password: String = "12345"
     
     func onLogin() {
         loginComplete = true

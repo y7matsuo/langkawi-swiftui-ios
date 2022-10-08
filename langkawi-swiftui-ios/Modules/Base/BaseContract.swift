@@ -34,6 +34,4 @@ protocol BaseInteractorOutput: AnyObject {
     func onError(error: Error)
 }
 
-protocol BaseWireFrame: AnyObject {}
-
 protocol BasePresentation: AnyObject {}
