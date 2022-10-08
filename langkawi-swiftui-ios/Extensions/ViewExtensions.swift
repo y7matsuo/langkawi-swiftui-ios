@@ -20,4 +20,8 @@ extension View {
             LoginRouter.assemble(isPresented: isPresented)
         }
     }
+    
+    func paddingHorizontal(_ length: CGFloat? = nil) -> some View {
+        padding(.leading, length).padding(.trailing, length)
+    }
 }

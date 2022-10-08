@@ -13,6 +13,13 @@
 		6F0B6E4328F0019800E26CE5 /* ModalBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4228F0019800E26CE5 /* ModalBaseViewModel.swift */; };
 		6F0B6E4528F0073200E26CE5 /* PreviewSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4428F0073200E26CE5 /* PreviewSupport.swift */; };
 		6F0B6E4728F00CD300E26CE5 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4628F00CD300E26CE5 /* ViewExtensions.swift */; };
+		6F0B6E4A28F019AB00E26CE5 /* AccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4928F019AB00E26CE5 /* AccountInteractor.swift */; };
+		6F0B6E4C28F01B5800E26CE5 /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4B28F01B5800E26CE5 /* AccountPresenter.swift */; };
+		6F0B6E4E28F01B8400E26CE5 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4D28F01B8400E26CE5 /* AccountViewModel.swift */; };
+		6F0B6E5028F01CE500E26CE5 /* EnumExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4F28F01CE500E26CE5 /* EnumExtensions.swift */; };
+		6F0B6E5228F01F3700E26CE5 /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E5128F01F3700E26CE5 /* AccountRouter.swift */; };
+		6F83FC2C28F131310060FD0A /* AccountPreviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83FC2B28F131310060FD0A /* AccountPreviewRouter.swift */; };
+		6F83FC2F28F1397C0060FD0A /* LoginPreviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83FC2E28F1397C0060FD0A /* LoginPreviewRouter.swift */; };
 		6FCC9AFB28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC9AFA28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift */; };
 		6FCC9AFD28EEBAA30019ACBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC9AFC28EEBAA30019ACBB /* ContentView.swift */; };
 		6FCC9AFF28EEBAA40019ACBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC9AFE28EEBAA40019ACBB /* Assets.xcassets */; };
@@ -104,6 +111,13 @@
 		6F0B6E4228F0019800E26CE5 /* ModalBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBaseViewModel.swift; sourceTree = "<group>"; };
 		6F0B6E4428F0073200E26CE5 /* PreviewSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSupport.swift; sourceTree = "<group>"; };
 		6F0B6E4628F00CD300E26CE5 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		6F0B6E4928F019AB00E26CE5 /* AccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInteractor.swift; sourceTree = "<group>"; };
+		6F0B6E4B28F01B5800E26CE5 /* AccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
+		6F0B6E4D28F01B8400E26CE5 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		6F0B6E4F28F01CE500E26CE5 /* EnumExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumExtensions.swift; sourceTree = "<group>"; };
+		6F0B6E5128F01F3700E26CE5 /* AccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
+		6F83FC2B28F131310060FD0A /* AccountPreviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPreviewRouter.swift; sourceTree = "<group>"; };
+		6F83FC2E28F1397C0060FD0A /* LoginPreviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPreviewRouter.swift; sourceTree = "<group>"; };
 		6FCC9AF728EEBAA30019ACBB /* langkawi-swiftui-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "langkawi-swiftui-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCC9AFA28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = langkawi_swiftui_iosApp.swift; sourceTree = "<group>"; };
 		6FCC9AFC28EEBAA30019ACBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -228,6 +242,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6F83FC2928F1310A0060FD0A /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				6F83FC2A28F131110060FD0A /* Account */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		6F83FC2A28F131110060FD0A /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				6F83FC2B28F131310060FD0A /* AccountPreviewRouter.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		6F83FC2D28F1395C0060FD0A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6F83FC2E28F1397C0060FD0A /* LoginPreviewRouter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		6FCC9AEE28EEBAA30019ACBB = {
 			isa = PBXGroup;
 			children = (
@@ -273,8 +311,10 @@
 		6FCC9B0028EEBAA40019ACBB /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				6FCC9B0128EEBAA40019ACBB /* Preview Assets.xcassets */,
 				6F0B6E4428F0073200E26CE5 /* PreviewSupport.swift */,
+				6FCC9B0128EEBAA40019ACBB /* Preview Assets.xcassets */,
+				6F83FC2D28F1395C0060FD0A /* Login */,
+				6F83FC2928F1310A0060FD0A /* Tab */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -369,7 +409,11 @@
 			isa = PBXGroup;
 			children = (
 				6FE7CBC228EFA1FE004ADDA8 /* AccountContract.swift */,
+				6F0B6E4928F019AB00E26CE5 /* AccountInteractor.swift */,
+				6F0B6E4B28F01B5800E26CE5 /* AccountPresenter.swift */,
+				6F0B6E5128F01F3700E26CE5 /* AccountRouter.swift */,
 				6FE7CB9528EECD52004ADDA8 /* AccountView.swift */,
+				6F0B6E4D28F01B8400E26CE5 /* AccountViewModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -377,6 +421,7 @@
 		6FE7CBC628EFA4CD004ADDA8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6F0B6E4F28F01CE500E26CE5 /* EnumExtensions.swift */,
 				6FE7CBC728EFA4F5004ADDA8 /* ModelExtensions.swift */,
 				6FE7CBF328EFA609004ADDA8 /* UIExtensions.swift */,
 				6F0B6E4628F00CD300E26CE5 /* ViewExtensions.swift */,
@@ -717,6 +762,7 @@
 				6FE7CBE428EFA527004ADDA8 /* SuccessResponse.swift in Sources */,
 				6FE7CBEE28EFA5E5004ADDA8 /* SubmitterType.swift in Sources */,
 				6FE7CBDE28EFA527004ADDA8 /* User.swift in Sources */,
+				6F0B6E5228F01F3700E26CE5 /* AccountRouter.swift in Sources */,
 				6FE7CBDD28EFA527004ADDA8 /* TalkResponse.swift in Sources */,
 				6FE7CBBC28EFA0F9004ADDA8 /* BaseAPI.swift in Sources */,
 				6F0B6E4728F00CD300E26CE5 /* ViewExtensions.swift in Sources */,
@@ -728,9 +774,11 @@
 				6FE7CBD928EFA527004ADDA8 /* UserDetail.swift in Sources */,
 				6FE7CBAA28EF0E6F004ADDA8 /* UISupport.swift in Sources */,
 				6FE7CBBD28EFA0F9004ADDA8 /* LoginAPI.swift in Sources */,
+				6F83FC2C28F131310060FD0A /* AccountPreviewRouter.swift in Sources */,
 				6FE7CBDA28EFA527004ADDA8 /* DBKeyValue.swift in Sources */,
 				6FE7CBEF28EFA5E5004ADDA8 /* GenderType.swift in Sources */,
 				6FE7CBE328EFA527004ADDA8 /* ErrorResponse.swift in Sources */,
+				6F0B6E4E28F01B8400E26CE5 /* AccountViewModel.swift in Sources */,
 				6FE7CBC328EFA1FE004ADDA8 /* AccountContract.swift in Sources */,
 				6FE7CBB728EFA0F9004ADDA8 /* ImageAPI.swift in Sources */,
 				6F0B6E4128EFF3BC00E26CE5 /* ButtonStyles.swift in Sources */,
@@ -738,13 +786,16 @@
 				6FE7CBBB28EFA0F9004ADDA8 /* UserDetailAPI.swift in Sources */,
 				6FCC9AFB28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift in Sources */,
 				6FE7CB9628EECD52004ADDA8 /* AccountView.swift in Sources */,
+				6F0B6E4A28F019AB00E26CE5 /* AccountInteractor.swift in Sources */,
 				6FE7CB9B28EED0D9004ADDA8 /* ColorDef.swift in Sources */,
 				6FE7CC1328EFD48C004ADDA8 /* MessageDef.swift in Sources */,
 				6FE7CBE028EFA527004ADDA8 /* TalkRoomsResponse.swift in Sources */,
 				6FE7CBB928EFA0F9004ADDA8 /* RequestAdaptors.swift in Sources */,
 				6FE7CBFC28EFA815004ADDA8 /* LoginContract.swift in Sources */,
 				6FE7CBBE28EFA0F9004ADDA8 /* RelationAPI.swift in Sources */,
+				6F0B6E4C28F01B5800E26CE5 /* AccountPresenter.swift in Sources */,
 				6FE7CBC028EFA105004ADDA8 /* SwinjectManager.swift in Sources */,
+				6F83FC2F28F1397C0060FD0A /* LoginPreviewRouter.swift in Sources */,
 				6FE7CBC828EFA4F5004ADDA8 /* ModelExtensions.swift in Sources */,
 				6FE7CC0328EFB4C9004ADDA8 /* BaseViewModel.swift in Sources */,
 				6FE7CB8D28EECAB6004ADDA8 /* MainTabView.swift in Sources */,
@@ -756,6 +807,7 @@
 				6FE7CBD828EFA527004ADDA8 /* RelationResponse.swift in Sources */,
 				6FE7CB9428EECCF2004ADDA8 /* TalkRoomView.swift in Sources */,
 				6F0B6E4528F0073200E26CE5 /* PreviewSupport.swift in Sources */,
+				6F0B6E5028F01CE500E26CE5 /* EnumExtensions.swift in Sources */,
 				6FE7CBE228EFA527004ADDA8 /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

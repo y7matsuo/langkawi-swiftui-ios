@@ -8,7 +8,7 @@
 import SwiftUI
 
 func ContentViewWithNavigation(title: String, content: () -> some View) -> some View {
-    VStack {
+    VStack(spacing: 0) {
         Rectangle().fill(.black).frame(height: 0.5)
         content()
         Spacer()
