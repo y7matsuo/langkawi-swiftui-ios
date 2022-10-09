@@ -15,7 +15,7 @@ class AccountPreviewRouter {
     }
     
     static func assemble() -> some View {
-        let vm = AccountViewModel(userId: 1)
+        let vm = AccountViewModel()
         vm.avator = UIImage(named: "AvatorMan") ?? UIImage()
         vm.name = "松尾 勇気"
         vm.gender = "男性"
