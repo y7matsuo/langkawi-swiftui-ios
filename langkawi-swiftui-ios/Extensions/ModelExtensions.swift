@@ -7,6 +7,13 @@
 
 import Foundation
 
+extension Optional where Wrapped == Int {
+    
+    func toAgeLabelText() -> String {
+        return "\(self ?? 0)\(LabelDef.ageSuffix)"
+    }
+}
+
 extension User {
     
     func toNameLabelText() -> String {
@@ -14,7 +21,7 @@ extension User {
     }
     
     func toAgeLabelText() -> String {
-        return "\(self.age ?? 0)\(LabelDef.ageSuffix)"
+        return self.age.toAgeLabelText()
     }
 }
 
