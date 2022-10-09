@@ -18,6 +18,8 @@ class BaseViewModel: ObservableObject {
     @Published var showAlert: Bool = false
     @Published var alertContent: AlertContent? = nil
     
+    var cancellables = Set<AnyCancellable>()
+    
     func onError(error: Error) {
         switch error {
         case let err as APIStatusError:
@@ -44,5 +46,14 @@ class BaseViewModel: ObservableObject {
             )
         }
         showAlert = true
+    }
+    
+    func sinkLogin(action: @escaping () -> Void) {
+        $showLogin.dropFirst().sink {
+            guard $0 == false else {
+                return
+            }
+            action()
+        }.store(in: &cancellables)
     }
 }
