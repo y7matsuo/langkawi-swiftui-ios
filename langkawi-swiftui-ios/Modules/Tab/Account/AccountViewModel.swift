@@ -9,8 +9,8 @@ import UIKit
 import SwiftUI
 import Combine
 
-class AccountViewModel: BaseViewModel {
-    let userId: Int
+class AccountViewModel: PresenterViewModel {
+    @Published var userId: Int = 0
     
     @Published var avator: UIImage = UIImage()
     @Published var name: String = ""
@@ -21,9 +21,4 @@ class AccountViewModel: BaseViewModel {
     
     @Published var showNameEdit: Bool = false
     @Published var showDescriptionEdit: Bool = false
-    
-    init(userId: Int) {
-        self.userId = userId
-        super.init()
-    }
 }

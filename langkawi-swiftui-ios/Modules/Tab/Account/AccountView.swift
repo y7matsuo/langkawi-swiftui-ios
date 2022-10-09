@@ -22,7 +22,7 @@ struct AccountView: View {
                             .aspectRatio(contentMode: .fit)
                             .padding()
                         Spacer()
-                        SelectButton(image: "image") {}
+                        Link(image: "image") { EmptyView() }
                     }
                     .frame(height: 190)
                     .background(ColorDef.surface)
@@ -45,7 +45,9 @@ struct AccountView: View {
                                 .font(Font.system(size: 20))
                         }.padding()
                         Spacer()
-                        SelectButton(image: "pen-to-square") {}
+                        Link(image: "pen-to-square") {
+                            EditNameRouter.assemble(isPresented: $vm.isPresented)
+                        }
                     }
                     .background(ColorDef.surface)
                     .cornerRadius(15)
@@ -56,27 +58,29 @@ struct AccountView: View {
                             .font(Font.system(size: 14))
                             .padding()
                         Spacer()
-                        SelectButton(image: "pencil") {}
+                        Link(image: "pencil") { EmptyView() }
                     }
                     .background(ColorDef.surface)
                     .cornerRadius(15)
                     .paddingHorizontal()
                 }
             }
-        }.onAppear {
+        }
+        .onAppear {
             presenter.fetchAccount()
         }
+        .configureCommonDialog(vm: vm)
     }
     
-    private func SelectButton(image: String, action: () -> Void) -> some View {
-        Button(action: {}) {
+    private func Link(image: String, destination: @escaping () -> some View) -> some View {
+        NavigationLink(destination: destination) {
             let label = UILabel.fontAwesome(type: .solid, name: image, color: .black, size: 25)
             Image(uiImage: label.toImage() ?? UIImage())
+                .frame(width: 40, height: 40)
+                .background(ColorDef.primary)
+                .cornerRadius(20)
+                .padding()
         }
-        .frame(width: 40, height: 40)
-        .background(ColorDef.primary)
-        .cornerRadius(20)
-        .padding()
     }
 }
 

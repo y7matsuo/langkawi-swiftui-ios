@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class LoginViewModel: ModalBaseViewModel {
+class LoginViewModel: PresentedViewModel {
     @Published var loginComplete: Bool = false
     @Published var loginId: String = "jerold@adams.co"
     @Published var password: String = "12345"

@@ -24,4 +24,17 @@ extension View {
     func paddingHorizontal(_ length: CGFloat? = nil) -> some View {
         padding(.leading, length).padding(.trailing, length)
     }
+    
+    func configureCommonDialog(vm: BaseViewModel) -> some View {
+        let isAlertPresented = Binding(
+            get: { vm.showAlert },
+            set: { value, _ in vm.showAlert = value }
+        )
+        let isLoginPresented = Binding(
+            get: { vm.showLogin },
+            set: { value, _ in vm.showLogin = value }
+        )
+        return showAlert(isPresented: isAlertPresented, content: vm.alertContent)
+            .showLogin(isPresented: isLoginPresented)
+    }
 }

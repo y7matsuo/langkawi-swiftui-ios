@@ -5,7 +5,6 @@
 //  Created by 松尾 勇気（Yuki Matsuo） on 2022/10/07.
 //
 
-import Combine
 import UIKit
 
 class AccountPresenter: AccountPresentation {
@@ -15,11 +14,18 @@ class AccountPresenter: AccountPresentation {
     init(vm: AccountViewModel, interactor: AccountInteractor) {
         self.vm = vm
         self.interactor = interactor
+        
+        vm.sinkLoginAndPresented { [weak self] in
+            self?.fetchAccount()
+        }
     }
     
     func fetchAccount() {
-        interactor.fetchUser(userId: vm.userId)
-        interactor.fetchAvator(userId: vm.userId)
+        guard let userId = LoginManager.getLoginUserId() else {
+            return
+        }
+        interactor.fetchUser(userId: userId)
+        interactor.fetchAvator(userId: userId)
     }
     
     func showNameEdit() {
@@ -33,6 +39,7 @@ class AccountPresenter: AccountPresentation {
 
 extension AccountPresenter: AccountInteractorOutput {
     func onFetchUser(user: User) {
+        vm.userId = user.id
         vm.name = user.toNameLabelText()
         vm.age = user.toAgeLabelText()
         vm.gender = user.gender?.toLabel() ?? ""

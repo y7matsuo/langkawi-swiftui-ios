@@ -42,6 +42,8 @@ class LabelDef {
     
     static let talkRoom = "トークルーム"
     
+    static let editName = "名前を編集"
+    
     static let ageSuffix = "歳"
     static let dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
 }

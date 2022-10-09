@@ -10,9 +10,8 @@ import SwiftUI
 class AccountRouter {
     
     static func assemble() -> some View {
-        let userId = LoginManager.getLoginUserId()
         let interactor = AccountInteractor(userAPI: UserAPIImpl(), imageAPI: ImageAPIImpl())
-        let vm = AccountViewModel(userId: userId ?? 0)
+        let vm = AccountViewModel()
         let presenter = AccountPresenter(vm: vm, interactor: interactor)
         interactor.output = presenter
         return AccountView(vm: vm, presenter: presenter)

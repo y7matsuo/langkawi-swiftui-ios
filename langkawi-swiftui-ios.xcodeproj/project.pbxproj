@@ -10,7 +10,7 @@
 		3F9F69C74589DD228DD7A77D /* Pods_langkawi_swiftui_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D6C9FA8770F9E5A88B309E /* Pods_langkawi_swiftui_iosTests.framework */; };
 		568A0336A9B17E496F1CCEB0 /* Pods_langkawi_swiftui_ios_langkawi_swiftui_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4CD9F510858AB962EC6B24 /* Pods_langkawi_swiftui_ios_langkawi_swiftui_iosUITests.framework */; };
 		6F0B6E4128EFF3BC00E26CE5 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4028EFF3BC00E26CE5 /* ButtonStyles.swift */; };
-		6F0B6E4328F0019800E26CE5 /* ModalBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4228F0019800E26CE5 /* ModalBaseViewModel.swift */; };
+		6F0B6E4328F0019800E26CE5 /* PresentedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4228F0019800E26CE5 /* PresentedViewModel.swift */; };
 		6F0B6E4528F0073200E26CE5 /* PreviewSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4428F0073200E26CE5 /* PreviewSupport.swift */; };
 		6F0B6E4728F00CD300E26CE5 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4628F00CD300E26CE5 /* ViewExtensions.swift */; };
 		6F0B6E4A28F019AB00E26CE5 /* AccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E4928F019AB00E26CE5 /* AccountInteractor.swift */; };
@@ -20,6 +20,13 @@
 		6F0B6E5228F01F3700E26CE5 /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0B6E5128F01F3700E26CE5 /* AccountRouter.swift */; };
 		6F83FC2C28F131310060FD0A /* AccountPreviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83FC2B28F131310060FD0A /* AccountPreviewRouter.swift */; };
 		6F83FC2F28F1397C0060FD0A /* LoginPreviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83FC2E28F1397C0060FD0A /* LoginPreviewRouter.swift */; };
+		6F83FC3328F15F5F0060FD0A /* EditNameContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83FC3228F15F5F0060FD0A /* EditNameContract.swift */; };
+		6F83FC3528F161540060FD0A /* EditNameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83FC3428F161540060FD0A /* EditNameInteractor.swift */; };
+		6F83FC3728F162A90060FD0A /* EditNamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83FC3628F162A90060FD0A /* EditNamePresenter.swift */; };
+		6F83FC3928F162D10060FD0A /* EditNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83FC3828F162D10060FD0A /* EditNameViewModel.swift */; };
+		6F83FC3B28F169530060FD0A /* EditNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83FC3A28F169530060FD0A /* EditNameView.swift */; };
+		6F83FC3F28F169CF0060FD0A /* EditNamePreviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83FC3E28F169CF0060FD0A /* EditNamePreviewRouter.swift */; };
+		6F83FC4128F169DE0060FD0A /* EditNameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83FC4028F169DE0060FD0A /* EditNameRouter.swift */; };
 		6FCC9AFB28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC9AFA28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift */; };
 		6FCC9AFD28EEBAA30019ACBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC9AFC28EEBAA30019ACBB /* ContentView.swift */; };
 		6FCC9AFF28EEBAA40019ACBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC9AFE28EEBAA40019ACBB /* Assets.xcassets */; };
@@ -108,7 +115,7 @@
 		36F6C5A14D973040B9C4FA68 /* Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests/Pods-langkawi-swiftui-ios-langkawi-swiftui-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3E971E84A033E69FD52FF083 /* Pods-langkawi-swiftui-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-langkawi-swiftui-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-langkawi-swiftui-iosTests/Pods-langkawi-swiftui-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F0B6E4028EFF3BC00E26CE5 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
-		6F0B6E4228F0019800E26CE5 /* ModalBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBaseViewModel.swift; sourceTree = "<group>"; };
+		6F0B6E4228F0019800E26CE5 /* PresentedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedViewModel.swift; sourceTree = "<group>"; };
 		6F0B6E4428F0073200E26CE5 /* PreviewSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSupport.swift; sourceTree = "<group>"; };
 		6F0B6E4628F00CD300E26CE5 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		6F0B6E4928F019AB00E26CE5 /* AccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInteractor.swift; sourceTree = "<group>"; };
@@ -118,6 +125,13 @@
 		6F0B6E5128F01F3700E26CE5 /* AccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
 		6F83FC2B28F131310060FD0A /* AccountPreviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPreviewRouter.swift; sourceTree = "<group>"; };
 		6F83FC2E28F1397C0060FD0A /* LoginPreviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPreviewRouter.swift; sourceTree = "<group>"; };
+		6F83FC3228F15F5F0060FD0A /* EditNameContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameContract.swift; sourceTree = "<group>"; };
+		6F83FC3428F161540060FD0A /* EditNameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameInteractor.swift; sourceTree = "<group>"; };
+		6F83FC3628F162A90060FD0A /* EditNamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNamePresenter.swift; sourceTree = "<group>"; };
+		6F83FC3828F162D10060FD0A /* EditNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameViewModel.swift; sourceTree = "<group>"; };
+		6F83FC3A28F169530060FD0A /* EditNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameView.swift; sourceTree = "<group>"; };
+		6F83FC3E28F169CF0060FD0A /* EditNamePreviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNamePreviewRouter.swift; sourceTree = "<group>"; };
+		6F83FC4028F169DE0060FD0A /* EditNameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameRouter.swift; sourceTree = "<group>"; };
 		6FCC9AF728EEBAA30019ACBB /* langkawi-swiftui-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "langkawi-swiftui-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCC9AFA28EEBAA30019ACBB /* langkawi_swiftui_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = langkawi_swiftui_iosApp.swift; sourceTree = "<group>"; };
 		6FCC9AFC28EEBAA30019ACBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -254,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				6F83FC2B28F131310060FD0A /* AccountPreviewRouter.swift */,
+				6F83FC3C28F169B50060FD0A /* Edit */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -264,6 +279,43 @@
 				6F83FC2E28F1397C0060FD0A /* LoginPreviewRouter.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		6F83FC3028F15F1B0060FD0A /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				6F83FC3128F15F230060FD0A /* Name */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		6F83FC3128F15F230060FD0A /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				6F83FC3228F15F5F0060FD0A /* EditNameContract.swift */,
+				6F83FC3428F161540060FD0A /* EditNameInteractor.swift */,
+				6F83FC3628F162A90060FD0A /* EditNamePresenter.swift */,
+				6F83FC4028F169DE0060FD0A /* EditNameRouter.swift */,
+				6F83FC3A28F169530060FD0A /* EditNameView.swift */,
+				6F83FC3828F162D10060FD0A /* EditNameViewModel.swift */,
+			);
+			path = Name;
+			sourceTree = "<group>";
+		};
+		6F83FC3C28F169B50060FD0A /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				6F83FC3D28F169B90060FD0A /* Name */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		6F83FC3D28F169B90060FD0A /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				6F83FC3E28F169CF0060FD0A /* EditNamePreviewRouter.swift */,
+			);
+			path = Name;
 			sourceTree = "<group>";
 		};
 		6FCC9AEE28EEBAA30019ACBB = {
@@ -414,6 +466,7 @@
 				6F0B6E5128F01F3700E26CE5 /* AccountRouter.swift */,
 				6FE7CB9528EECD52004ADDA8 /* AccountView.swift */,
 				6F0B6E4D28F01B8400E26CE5 /* AccountViewModel.swift */,
+				6F83FC3028F15F1B0060FD0A /* Edit */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -490,7 +543,7 @@
 			children = (
 				6FE7CC0028EFB1C2004ADDA8 /* BaseContract.swift */,
 				6FE7CC0228EFB4C9004ADDA8 /* BaseViewModel.swift */,
-				6F0B6E4228F0019800E26CE5 /* ModalBaseViewModel.swift */,
+				6F0B6E4228F0019800E26CE5 /* PresentedViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -745,11 +798,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FE7CB9928EECDE7004ADDA8 /* LabelDef.swift in Sources */,
+				6F83FC3928F162D10060FD0A /* EditNameViewModel.swift in Sources */,
 				6FE7CB9228EECCC2004ADDA8 /* FindView.swift in Sources */,
 				6FE7CBED28EFA5E5004ADDA8 /* UserType.swift in Sources */,
 				6FE7CBF428EFA609004ADDA8 /* UIExtensions.swift in Sources */,
 				6FE7CBF128EFA5E5004ADDA8 /* RelationPositionStatus.swift in Sources */,
 				6FE7CBE528EFA527004ADDA8 /* TalksResponse.swift in Sources */,
+				6F83FC3F28F169CF0060FD0A /* EditNamePreviewRouter.swift in Sources */,
 				6FE7CC0128EFB1C2004ADDA8 /* BaseContract.swift in Sources */,
 				6FE7CBF228EFA5E5004ADDA8 /* RelationStatus.swift in Sources */,
 				6FCC9AFD28EEBAA30019ACBB /* ContentView.swift in Sources */,
@@ -769,6 +824,7 @@
 				6FE7CB9028EECC99004ADDA8 /* HomeView.swift in Sources */,
 				6FE7CBA828EED70F004ADDA8 /* FontAwesomeType.swift in Sources */,
 				6FE7CBF028EFA5E5004ADDA8 /* TalkStatus.swift in Sources */,
+				6F83FC3728F162A90060FD0A /* EditNamePresenter.swift in Sources */,
 				6FE7CBDC28EFA527004ADDA8 /* TalkRoom.swift in Sources */,
 				6FE7CBB628EFA0F9004ADDA8 /* UserAPI.swift in Sources */,
 				6FE7CBD928EFA527004ADDA8 /* UserDetail.swift in Sources */,
@@ -793,22 +849,26 @@
 				6FE7CBB928EFA0F9004ADDA8 /* RequestAdaptors.swift in Sources */,
 				6FE7CBFC28EFA815004ADDA8 /* LoginContract.swift in Sources */,
 				6FE7CBBE28EFA0F9004ADDA8 /* RelationAPI.swift in Sources */,
+				6F83FC3528F161540060FD0A /* EditNameInteractor.swift in Sources */,
 				6F0B6E4C28F01B5800E26CE5 /* AccountPresenter.swift in Sources */,
 				6FE7CBC028EFA105004ADDA8 /* SwinjectManager.swift in Sources */,
 				6F83FC2F28F1397C0060FD0A /* LoginPreviewRouter.swift in Sources */,
 				6FE7CBC828EFA4F5004ADDA8 /* ModelExtensions.swift in Sources */,
 				6FE7CC0328EFB4C9004ADDA8 /* BaseViewModel.swift in Sources */,
 				6FE7CB8D28EECAB6004ADDA8 /* MainTabView.swift in Sources */,
-				6F0B6E4328F0019800E26CE5 /* ModalBaseViewModel.swift in Sources */,
+				6F0B6E4328F0019800E26CE5 /* PresentedViewModel.swift in Sources */,
 				6FE7CC0F28EFD0F2004ADDA8 /* LoginViewModel.swift in Sources */,
 				6FE7CBE128EFA527004ADDA8 /* UsersResponse.swift in Sources */,
 				6FE7CBBA28EFA0F9004ADDA8 /* TalkAPI.swift in Sources */,
 				6FE7CBC528EFA450004ADDA8 /* LoginManager.swift in Sources */,
 				6FE7CBD828EFA527004ADDA8 /* RelationResponse.swift in Sources */,
 				6FE7CB9428EECCF2004ADDA8 /* TalkRoomView.swift in Sources */,
+				6F83FC3B28F169530060FD0A /* EditNameView.swift in Sources */,
+				6F83FC3328F15F5F0060FD0A /* EditNameContract.swift in Sources */,
 				6F0B6E4528F0073200E26CE5 /* PreviewSupport.swift in Sources */,
 				6F0B6E5028F01CE500E26CE5 /* EnumExtensions.swift in Sources */,
 				6FE7CBE228EFA527004ADDA8 /* LoginResponse.swift in Sources */,
+				6F83FC4128F169DE0060FD0A /* EditNameRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
